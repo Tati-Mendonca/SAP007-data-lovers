@@ -1,93 +1,46 @@
-import { example } from './data.js';
-import data from './data/rickandmorty/rickandmorty.js';
+import data from "./data/rickandmorty/rickandmorty.js";
+import {filter, ordination} from './data.js';
+
+// EXIBIR OS CARDS
+const printingAllCards = (characters) => {
+  let showingCards = "";
+  for (let character of characters) {
+    showingCards += character = `<dl class="cards">
+    <img src="${character.image}" class="image-card">
+    <dt class="p-name-card">${character.name}</dt>
+    <dd class="p-card">Status: ${character.status}</dd>
+    <dd class="p-card">Especie: ${character.species}</dd>
+    <dd class="p-card">Gênero: ${character.gender}</dd>
+    <dd class="p-card">Origen: ${character.origin.name}</dd>
+    </dl>`;
+  }
+  document.getElementById("cardsBoard").innerHTML = showingCards;
+}
+printingAllCards(data.results);
+
+// FILTRAGEM POR ESPÉCIES
+const speciesFilter = document.getElementById("species");
+speciesFilter.addEventListener("change", function (event){
+
+  const speciesCards = filter(data.results, event.target.value);
+  printingAllCards(speciesCards);
+  })
+
+// FILTRAGEM POR STATUS
+  const statusFilter = document.getElementById("status");
+  statusFilter.addEventListener("change", function (event){
+
+    const statusCards = filter(data.results, event.target.value);
+    printingAllCards(statusCards);
+  })
 
 
+// ORDENAÇÃO
+const ordinationAz = document.querySelector("#ordination");
+ordinationAz.addEventListener("change", function(event){
 
-// console.log(data.info["count"]);
-// console.log(data.info["pages"]);
-// console.log(data.info["next"]);
-// console.log(data.info["prev"]);
-//console.log(data.results[0].name); //Nome <<<<<<<<<<
-// console.log(data.results); //Devolve o Array com todas as informações
-// //console.log(data.results[""]);
+  const characters = ordination(data.results, event.target.value);
+  printingAllCards(characters);
+  })
 
-
-const filtroEspecie = document.querySelector("#filtro");
-filtroEspecie.addEventListener("change", function (event) {
-  console.log(event.target.value)
-})
-
-const cardsSection = document.querySelector("#cards-section");
-cardsSection.innerHTML = `
-    <div id="card border" class="verde">
-      <img src="${data.results[1].image}">
-      <p>${data.results[1].name}</p>
-    </div>
-`
-
-
-
-// const dados = data.results;
-
-// for (let i = 0; i < dados.length; i++) { // For percorre todos os elementos do Array
-//     console.log(dados[i].species);
-
-
-// }
-
-
-
-
-
-
-
-
-// function retornaGender (value){
-//     if (value.gender == "male")
-//     return value;
-// }
-// var genderMale = nomePersonagem.filter(retornaGender);
-// genderMale.forEach(malePersonagem => {
-//     console.log(malePersonagem);
-// })
-
-
-
-
-
-// function genderPersonagem(gender) {
-//     if (gender === "male" ){
-//         return true
-//     } else {
-//         return false
-
-//     }
-
-// }
-
-
-
-
-
-//console.log(data.results[0].gender);
-
-// const personagem = data.results["image"]
-// let mostrarPersonagem = document.getElementById("printPersonagem");
-// let mostrarPersonagem2 = document.getElementById("printParagrafo");
-
-
-// function mostrarCoisas() {
-//     personagem.forEach(value) => {
-//         if (value === personagem[0]) {
-//             mostrarPersonagem.insertAdjacentHTML("afterbegin", '<img src="${value.image}" class="print">')
-//             for (let personagem of value.name){
-//                 mostrarPersonagem2.textContent= (personagem["gender"] + personagem["status"])
-//             }
-
-//         }
-//     })
-
-// }
-
-//mostrarCoisas()
 
