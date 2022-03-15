@@ -1,8 +1,8 @@
-//import { example, anotherExample } from '../src/data.js';
-import { describe } from 'eslint/lib/rule-tester/rule-tester';
-import { filter, ordination } from '../src/data.js';
 
-const personagens = [
+import { describe } from 'eslint/lib/rule-tester/rule-tester';
+import { filter, ordination, average } from '../src/data.js';
+
+const characters  = [
   {
       "id": 1,
       "name": "Abadango Cluster Princess",
@@ -37,7 +37,7 @@ const personagens = [
   }]
 
 
-const nomesPersonagens = [
+const characterNames  = [
   {"name": "Abadango Cluster Princess"},
   {"name": "Mechanical Morty"},
   {"name": "Kyle"},
@@ -50,17 +50,17 @@ describe('function filter()', () => {
     expect(typeof filter).toBe('function');
   });
 
-  it('filtrar por especie humana', () => {
+  it('filter by human species', () => {
     const specieHuman = 'Human'
-    const expected = filter(personagens, specieHuman)
+    const expected = filter(characters , specieHuman)
     expect (expected.length).toEqual(1)
     expect(expected[0].species).toEqual('Human');
   });
 });
 
-  it('filtrar por status Alive', () => {
+  it('filter by live status ', () => {
     const statusAlive = 'Alive'
-    const expected = filter(personagens, statusAlive)
+    const expected = filter(characters , statusAlive)
     expect (expected.length).toEqual(2)
     expect(expected[0].status).toEqual('Alive');
     expect(expected[1].status).toEqual('Alive');
@@ -71,11 +71,28 @@ describe('function ordination()', () => {
     expect(typeof ordination).toBe('function');
   });
 
-    it('ordenação de A-Z', () => {
-    expect(ordination(nomesPersonagens, "AZ")).toStrictEqual([nomesPersonagens[0], nomesPersonagens[3], nomesPersonagens[2], nomesPersonagens[1]]);
+    it('ordering of A-Z', () => {
+    expect(ordination(characterNames , "AZ")).toStrictEqual([characterNames [0], characterNames [3], characterNames [2], characterNames [1]]);
   });
 
-    it('ordenação de Z-A', () => {
-      expect(ordination(nomesPersonagens, "ZA")).toStrictEqual([nomesPersonagens[1], nomesPersonagens[2], nomesPersonagens[3], nomesPersonagens[0]]);
+    it('ordering of Z-A', () => {
+      expect(ordination(characterNames , "ZA")).toStrictEqual([characterNames [1], characterNames [2], characterNames [3], characterNames [0]]);
+    });
+  });
+
+
+  describe('function average()', () => {
+    it('is a function', () => {
+      expect(typeof average).toBe('function');
+    });
+
+    it('percentage of characters in the human category - 25%', () => {
+    const expected = average(characters .length, 1)
+      expect (expected).toEqual(25);
+    });
+
+  it('percentage of characters in the category dead status category - 50%', () => {
+    const expected = average(characters .length, 2)
+      expect (expected).toEqual(50);
     });
   });

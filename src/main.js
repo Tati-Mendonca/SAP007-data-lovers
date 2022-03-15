@@ -1,5 +1,5 @@
 import data from "./data/rickandmorty/rickandmorty.js";
-import {filter, ordination} from './data.js';
+import {filter, ordination, average } from './data.js';
 
 // EXIBIR OS CARDS
 const printingAllCards = (characters) => {
@@ -7,7 +7,7 @@ const printingAllCards = (characters) => {
   for (let character of characters) {
     showingCards += character = `<dl class="cards">
     <img src="${character.image}" class="image-card">
-    <dt class="p-name-card">${character.name}</dt>
+    <dt class="name-card">${character.name}</dt>
     <dd class="p-card">Status: ${character.status}</dd>
     <dd class="p-card">Especie: ${character.species}</dd>
     <dd class="p-card">Gênero: ${character.gender}</dd>
@@ -23,7 +23,9 @@ const speciesFilter = document.getElementById("species");
 speciesFilter.addEventListener("change", function (event){
 
   const speciesCards = filter(data.results, event.target.value);
+  document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(data.results.length, speciesCards.length)}% de todos os personagens`
   printingAllCards(speciesCards);
+
   })
 
 // FILTRAGEM POR STATUS
@@ -31,6 +33,7 @@ speciesFilter.addEventListener("change", function (event){
   statusFilter.addEventListener("change", function (event){
 
     const statusCards = filter(data.results, event.target.value);
+    document.getElementById("averageCalculation").innerHTML = `Essa categoria representa ${average(data.results.length, statusCards.length)}% de todos os personagens`
     printingAllCards(statusCards);
   })
 
@@ -42,5 +45,3 @@ ordinationAz.addEventListener("change", function(event){
   const characters = ordination(data.results, event.target.value);
   printingAllCards(characters);
   })
-
-
