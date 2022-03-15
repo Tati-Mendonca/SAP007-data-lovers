@@ -1,5 +1,8 @@
 # Data Lovers - Rick and Morty
-![json-interface](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
+<div align="center">
+<img src= "https://user-images.githubusercontent.com/97405991/158296024-450a33ac-5d83-4de2-bb62-d013bcd1d9be.jpg" width=400>
+</div>
+
 
 ## Índice
 
@@ -33,25 +36,36 @@ O projeto todo foi desenvolvido utilizando apenas vanilla JavaScript, HTML5 e CS
 
 O layout da aplicação foi pensado deste o inicio para ser bem divertido e colorido e a paleta de cores utilizada foi baseada nas cores utilizadas na própria série.
 
+Paletas de cores:
 <div align="center">
 <img src="https://user-images.githubusercontent.com/97405991/157973254-dd72c90d-edfc-4619-85bd-aa2d74661200.jpeg" width=600>
 </div>
 
 Desenvolvemos uma plataforma de fácil a navegação e bastante intuitiva para ser acessível a todo tipo de público, além de  trazer uma resposta rápida na busca por informações.
 
-
+<div align="center">
+<img src="https://user-images.githubusercontent.com/97405991/158296782-54b2d4ee-d993-4f6d-ab93-d245525b1d86.png" width=500>
+</div>
 
 A Princípio a ideia era trabalhamos apenas com 2 telas, porem conforme fomos desenvolvendo percebemos que estaríamos lidando com muitos dados e sentimos a necessidade de criar uma página exclusiva para a exibição dos Cards e cálculos agregados.
-
-[PROTÓTIPO COM AS TELAS ADICIONAIS]
+<div align="center">
+<img src="https://user-images.githubusercontent.com/97405991/158302922-16bf2e6d-ec5c-4dc1-97b1-7e9e858c6d8a.jpg" width=500>
+</div>
 
 Optamos por imprimir os dados dos personagens em formato de Cards pois acreditamos que o conteúdo fica bem organizado e de fácil legibilidade tornando a experiência do usuário mais eficiente ao selecionar a parte do conteúdo que deseja interagir.
 
-[PRINT DA PAGINA DE CARDS]
+<div align="center">
+<img src="https://user-images.githubusercontent.com/97405991/158298063-370ecfeb-bc49-454c-b522-a8fcc6f5ca85.jpeg" width=500>
+</div>
 
 Além disso o projeto possui um design responsivo possibilitando a experiência do usuário em qualquer dispositivo, seja em grandes telas, tablets ou celulares.
 
-[ GRAVAÇÃO DE INTERAÇÃO COM A TELA EM FORMATO CELULAR]
+<a href="https://www.loom.com/share/79c8d452bce044b4a572079d094ad84e">
+    <p></p></a>
+    <img style="max-width:400px;" src="https://cdn.loom.com/sessions/thumbnails/79c8d452bce044b4a572079d094ad84e-with-play.gif">
+
+
+
 
 
 A interface permite ao usuário:
@@ -67,4 +81,4 @@ A interface permite ao usuário:
 
 
 | [<img src="https://avatars.githubusercontent.com/u/97405991?v=4" width=115><br><sub>Tatiane Mendonça</sub>](https://github.com/Tati-Mendonca) |  [<img src="https://avatars.githubusercontent.com/u/97461151?v=4" width=115><br><sub>Viviane Soares</sub>](https://github.com/vivisoares) |   |
-| :---: | :---: | :---: |
+| :---: | :---: | :---:

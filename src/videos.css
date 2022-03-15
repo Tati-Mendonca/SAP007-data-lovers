@@ -26,8 +26,8 @@ h1{
 }
 .platform {
   position: absolute;
-  top: 30%;
-  left: 60%;
+  top: 45%;
+  left: 65%;
   transform: translate(-50%, -50%);
   font-size: 18px;
   text-align: center;
@@ -35,7 +35,11 @@ h1{
 
 img {
   width: 100%;
+}
 
+.logo{
+  width: 50%;
+  margin-top: 3%;
 }
 
 footer {
@@ -93,9 +97,15 @@ footer a{
     -webkit-flex-direction: column;
     flex-direction: column;
   }
+
   body{
     width: 100%;
   }
+
+  .logo{
+    display: inline;
+  }
+
   .active {
     background-color: #0adcde;
   }
@@ -109,7 +119,8 @@ footer a{
   }
 
   h1{
-    font-size: 1.5em;
+    padding-top: 2%;
+    font-size: 1em;
   }
 
   .image {
