@@ -26,4 +26,3 @@ export const average = (total, portion) => {
   return averageCalculation
 
 }
-

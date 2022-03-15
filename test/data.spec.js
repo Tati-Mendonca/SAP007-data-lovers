@@ -1,3 +1,4 @@
+
 import { describe } from 'eslint/lib/rule-tester/rule-tester';
 import { filter, ordination, average } from '../src/data.js';
 

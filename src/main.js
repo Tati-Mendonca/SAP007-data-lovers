@@ -45,4 +45,3 @@ ordinationAz.addEventListener("change", function(event){
   const characters = ordination(data.results, event.target.value);
   printingAllCards(characters);
   })
-
