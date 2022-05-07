@@ -6,11 +6,11 @@
 
 ## Índice
 
-- [1. Prefácio](#1-prefácio)
-- [2. Sobre o tema](#2-sobre-o-tema)
-- [3. Interface do usuário](#3-interface-do-usuário)
-- [4. Autoras](#4-Autoras)
-
+* [1. Prefácio](#1-prefácio)
+* [2. Sobre o tema](#2-sobre-o-tema)
+* [3. Interface do usuário](#3-interface-do-usuário)
+* [4. Como usar](#4-Como-usar)
+* [5. Autoras](#5-Autoras)
 
 ---
 
@@ -62,7 +62,11 @@ Além disso o projeto possui um design responsivo possibilitando a experiência 
 
 <a href="https://www.loom.com/share/79c8d452bce044b4a572079d094ad84e">
     <p></p></a>
-    <img style="max-width:400px;" src="https://cdn.loom.com/sessions/thumbnails/79c8d452bce044b4a572079d094ad84e-with-play.gif">
+    
+<div align="center">
+ <img style="max-width:400px;" src="https://cdn.loom.com/sessions/thumbnails/79c8d452bce044b4a572079d094ad84e-with-play.gif">
+</div>
+   
 
 
 
@@ -77,7 +81,29 @@ A interface permite ao usuário:
 - Visualizar as plataformas onde pode assistir episódios da série.
 - E ser direcionado a um site onde o usuário pode criar um novo personagem para a série.
 
-## 4. Autoras
+
+## 4. Como usar
+
+Você precisará usar o Node.js
+
+Clonar o projeto
+
+` $ git clone https://github.com/Lud-ic/pokemon-arena.git`
+
+Instalar as dependências do projeto
+
+` $ npm install or yarn`
+
+Iniciar a aplicação
+
+` $ npm start or yarn start`
+
+Realizar os testes unitários
+
+` $ npm test or yarn test`
+
+
+## 5. Autoras
 
 
 | [<img src="https://avatars.githubusercontent.com/u/97405991?v=4" width=115><br><sub>Tatiane Mendonça</sub>](https://github.com/Tati-Mendonca) |  [<img src="https://avatars.githubusercontent.com/u/97461151?v=4" width=115><br><sub>Viviane Soares</sub>](https://github.com/vivisoares) |   |
