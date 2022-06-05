@@ -88,7 +88,7 @@ Você precisará usar o Node.js
 
 Clonar o projeto
 
-` $ git clone https://github.com/Lud-ic/pokemon-arena.git`
+` $ git clone https://github.com/Tati-Mendonca/SAP007-data-lovers.git`
 
 Instalar as dependências do projeto
 
