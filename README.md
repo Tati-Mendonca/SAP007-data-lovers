@@ -106,5 +106,5 @@ Realizar os testes unitários
 ## 5. Autoras
 
 
-| [<img src="https://avatars.githubusercontent.com/u/97405991?v=4" width=115><br><sub>Tatiane Mendonça</sub>](https://github.com/Tati-Mendonca) |  [<img src="https://avatars.githubusercontent.com/u/97461151?v=4" width=115><br><sub>Viviane Soares</sub>](https://github.com/vivisoares) |   |
-| :---: | :---: | :---:
+| [<img src="https://avatars.githubusercontent.com/u/97405991?v=4" width=115><br><sub>Tatiane Mendonça</sub>](https://github.com/Tati-Mendonca) |  [<img src="https://avatars.githubusercontent.com/u/97461151?v=4" width=115><br><sub>Viviane Soares</sub>](https://github.com/vivisoares) |
+| :---: | :---: | 
